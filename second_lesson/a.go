@@ -1,1 +1,10 @@
-package second_lesson
+package main
+
+import "fmt"
+
+func main() {
+	var a int
+	a = 1
+	fmt.Println(a)
+	fmt.Println(a)
+}

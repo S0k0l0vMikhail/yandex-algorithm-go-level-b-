@@ -1,4 +1,4 @@
-package first_lesson
+package main
 
 import (
 	"bufio"
@@ -13,15 +13,14 @@ func main() {
 
 	fmt.Scan(&all)
 	scanner := bufio.NewScanner(os.Stdin)
-	const maxCapacity = 10000000  // your required line length
+	const maxCapacity = 10000000 // your required line length
 	buf := make([]byte, maxCapacity)
 	scanner.Buffer(buf, maxCapacity)
 	scanner.Scan()
 
 	in := strings.Split(scanner.Text(), " ")
 
-
-	a := all/2
+	a := all / 2
 
 	fmt.Println(in[a])
 }

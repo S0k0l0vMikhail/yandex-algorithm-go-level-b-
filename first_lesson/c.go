@@ -1,10 +1,10 @@
-package first_lesson
+package main
 
 import "fmt"
 
 func main() {
 	var a, b, year int
-	fmt.Scanln(&a, &b,&year)
+	fmt.Scanln(&a, &b, &year)
 
 	if a > 12 || b > 12 {
 		fmt.Println(1)
